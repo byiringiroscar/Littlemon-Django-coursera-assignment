@@ -82,5 +82,35 @@ footer p{
     font-size: 19px;
     color: black;
 }
+.food-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 10px;
+}
 
+.food-container h2{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.food{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.food a{
+    text-decoration: none;
+    color: #EACEBF;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.food p{
+    font-size: 14px;
+    color: black;
+}
 
