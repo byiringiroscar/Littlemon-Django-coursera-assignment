@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div>
+        <div class="food-main">
+            <p class="bar"><a href="{% url 'home' %}" class="{% url 'home' %}">Home</a>/<a href="{% url 'menu' %}" class="{% url 'menu' %}">Menu</a>/{{ food.name }}</p>
+            <div class="food-item">
+                <div class="food-list">
+                    <h2>{{ food.name }}</h2>
+                    <p>{{ food.description }}</p>
+                    <p>Price: ${{ food.price }}</p>
+                </div>
+                <img src="{{ food.image.url }}">
+            </div>
+        </div>
+    </div>
+{% endblock %}

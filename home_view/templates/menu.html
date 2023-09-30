@@ -7,7 +7,7 @@
         <div class="food-container">
             {% for food in foods %}
             <div class="food">
-                <a href="">{{ food.name }}</a>
+                <a href="{% url 'menu_detail' food.id %}">{{ food.name }}</a>
                 <p>${{ food.price }}</p>
             </div>
             {% endfor %}

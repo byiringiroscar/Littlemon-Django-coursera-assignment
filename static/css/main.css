@@ -60,6 +60,12 @@ nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: orange !important;
+    text-decoration: none;
 }
 
 /* Style the main content area */
@@ -112,5 +118,34 @@ footer p{
 .food p{
     font-size: 14px;
     color: black;
+}
+
+.food-main{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+}
+.bar{
+    font-size: 15px;
+}
+.bar a{
+    color: orange !important;
+    font-weight: bold;
+}
+
+.food-item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.food-item img{
+    height: 280px;
+    width: 40%;
+}
+
+.food-item div{
+    width: 60%;
 }
 
