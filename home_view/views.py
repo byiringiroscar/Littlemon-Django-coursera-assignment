@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import *
 
 # Create your views here.
 
@@ -16,4 +16,8 @@ def book(request):
 
 
 def menu(request):
-    return render(request, 'menu.html')
+    foods = Menu.objects.all()
+    context = {
+        "foods": foods
+    }
+    return render(request, 'menu.html', context)

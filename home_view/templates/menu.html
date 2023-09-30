@@ -5,26 +5,12 @@
     <div>
         <h2>Menu</h2>
         <div class="food-container">
+            {% for food in foods %}
             <div class="food">
-                <a href="">Nbdsdsds</a>
-                <p>$11.0</p>
+                <a href="">{{ food.name }}</a>
+                <p>${{ food.price }}</p>
             </div>
-            <div class="food">
-                <a href="">Nbdsdsds</a>
-                <p>$11.0</p>
-            </div>
-            <div class="food">
-                <a href="">Nbdsdsds</a>
-                <p>$11.0</p>
-            </div>
-            <div class="food">
-                <a href="">Nbdsdsds</a>
-                <p>$11.0</p>
-            </div>
-            <div class="food">
-                <a href="">Nbdsdsds</a>
-                <p>$11.0</p>
-            </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}
